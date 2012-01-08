@@ -9,6 +9,11 @@ get "/" do
   File.read(File.join(settings.public_folder, "/index.html"))
 end
 
+get "/:one/:two/:three/:four/:five/?" do
+  response.headers['Cache-Control'] = 'public, max-age=300'
+  File.read(File.join(settings.public_folder, params[:one], params[:two], params[:three], params[:four], params[:five] + "/index.html"))
+end
+
 get "/:one/:two/:three/:four/?" do
   response.headers['Cache-Control'] = 'public, max-age=300'
   File.read(File.join(settings.public_folder, params[:one], params[:two], params[:three], params[:four] + "/index.html"))
