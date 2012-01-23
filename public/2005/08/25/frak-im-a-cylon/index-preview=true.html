@@ -217,7 +217,13 @@ my email is <a href="mailto:peggy.xu@highteam.com">peggy.xu@highteam.com</a><br 
 
 <h3 id="respond">Comment on this post:</h3>
 
-<p>You must be <a href="/wp-login.php?redirect_to=/2005/08/25/frak-im-a-cylon">logged in</a> to post a comment.</p>
+<form action="/wp-comments-post.php" method="post" id="commentform">
+
+<p><textarea disabled name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+
+<p><input disabled name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" /></p>
+
+</form>
 
 
 </div>

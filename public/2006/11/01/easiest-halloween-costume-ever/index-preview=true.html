@@ -135,7 +135,13 @@
 
 <h3 id="respond">Comment on this post:</h3>
 
-<p>You must be <a href="/wp-login.php?redirect_to=/2006/11/01/easiest-halloween-costume-ever">logged in</a> to post a comment.</p>
+<form action="/wp-comments-post.php" method="post" id="commentform">
+
+<p><textarea disabled name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+
+<p><input disabled name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" /></p>
+
+</form>
 
 
 </div>
