@@ -9,7 +9,7 @@ get "/" do
   File.read(File.join(settings.public_folder, "/index.html"))
 end
 
-get "/feed/atom", :provides => ['xml'] do
+get "/feed/atom", :provides => ['atom'] do
   File.read(File.join(settings.public_folder, "feed/atom.xml"))
 end
 
