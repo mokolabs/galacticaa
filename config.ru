@@ -1,5 +1,9 @@
-require './server'
+# GEMS
+require 'sinatra'
 require 'rack-rewrite'
+
+# APP
+require './server'
 
 use Rack::Rewrite do
   r301 %r{.*}, 'http://galacticaa.net$&', :if => Proc.new {|rack_env|
