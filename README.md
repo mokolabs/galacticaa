@@ -15,3 +15,9 @@ should happen automatically from the `.ruby-version` file)
 
 ### Launch the app
 1. Run `bundle exec foreman start` to launch the app.
+
+## Deploy the app
+The app is hosted on a dokku-managed droplet on Digital Ocean.
+
+1. `git remote add droplet dokku@droplet.mokolabs.com:galacticaa` to add droplet remote
+2. `git push droplet master` to deploy the changes
